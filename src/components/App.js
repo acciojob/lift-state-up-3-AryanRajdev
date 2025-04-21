@@ -9,10 +9,10 @@ const App = () => {
 
   return (
     <div className="parent">
-        <h2>Parent Component</h2>
+        <h1>Parent Component</h1>
         <Child1 setSelectedOption = {setSelectedOption}/>
         <Child2 setSelectedOption = {setSelectedOption}/>
-        <p>Seleted Option: {selectedOption}</p>
+        <p data-testid="selected-option">Selected Option: {selectedOption}</p>
     </div>
   )
 }
